@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>software</title>
+</head>
+<body>
+
+    <h1>GRADE MACHINE</h1>
+    <h1>Created By : Mohammad Ahmed Khan</h1>
+
+    <form action="#" onsubmit="check()">
+        <input type="number" id="Per">
+        <button>Show Grade</button>
+    </form>
+
+    <h1 id="result"></h1>
+    
+
+    <script>
+    function check() {
+            let Per = document.getElementById("Per").value;
+            Per = parseFloat(Per);
+
+            if(Per >= 80 && Per <=100  )  {
+                document.getElementById("result").innerHTML = "<h1> A+ </h1>"
+            }
+
+            else if (Per >= 70 && Per <= 79 ) {
+                document.getElementById("result").innerHTML = "<h1> A </h1>"
+            }
+            
+else if (Per >= 60 && Per <= 69 )             {
+
+                document.getElementById("result").innerHTML = "<h1> B </h1>"
+            }
+            
+            else if(Per >= 50 && Per <= 59 ) {
+                document.getElementById("result").innerHTML = "<h1> C </h1>"
+            }
+
+            else if(Per >= 45 && Per <= 49 ) {
+                document.getElementById("result").innerHTML = "<h1> D </h1>"
+            }
+            
+            else{
+                document.getElementById("result").innerHTML = "<h1> FAIL </h1>"
+            }
+        }
+    </script>
+
+
+</body>
+</html>
