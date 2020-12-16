@@ -10,7 +10,7 @@ function addition() {
     let c = (a + b);
     document.getElementById("data").innerHTML=c;
 }
-
+if (age > 65 || age < 21 && res === "U.S.") {
 
 
 function substraction() {
